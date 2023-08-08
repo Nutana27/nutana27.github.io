@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Watches Landing Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href=""#"><img src="img/logo.png"  class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Latest arrival of new <span>watches</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consequuntur distinctio nesciunt? Minus quisquam, modi corporis, 
+                    quas velit blanditiis natus enim unde ipsa optio laboriosam mollitia molestias ullam aliquid sed!
+                </p>
+                <a hrefd="#">Learn More</a>
+             
+            </div>
+            <div class="imgBox">
+                <img src="img/w1.png" Class="watches">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/thumb1.png" onclick="imgSlider('img1.png')"></li>
+            <li><img src="img/thumb2.png" onclick="imgSlider('img2.png')"></li>
+            <li><img src="img/thumb3.png" onclick="imgSlider('img3.png')"></li>
+        </ul>
+        <ul class="sm">
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.watches').src=anything;
+        }
+    </script>
+</body>
+</html>
